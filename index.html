@@ -5,117 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Michael Geske | Computer Science ePortfolio</title>
   <style>
-    :root {
-      --bg: #0b0f19;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #60a5fa;
-      --border: #1f2937;
+    :root{
+      --bg:#0b0f19; --card:#111827; --text:#e5e7eb; --muted:#9ca3af;
+      --accent:#60a5fa; --border:#1f2937;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header {
-      border-bottom: 1px solid var(--border);
-      background: rgba(17,24,39,0.6);
-      backdrop-filter: blur(8px);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    .container { max-width: 980px; margin: 0 auto; padding: 18px 16px; }
-    .brand {
-      display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
-    }
-    .brand h1 { font-size: 20px; margin: 0; }
-    .brand .tag { color: var(--muted); font-size: 14px; }
-    nav {
-      margin-top: 10px;
-      display: flex; flex-wrap: wrap; gap: 10px;
-    }
-    nav a {
-      padding: 8px 10px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      background: rgba(17,24,39,0.7);
-      font-size: 14px;
-    }
-    main { padding: 26px 0 50px; }
-    section { margin: 18px 0 28px; }
-    h2 { margin: 0 0 10px; font-size: 20px; }
-    h3 { margin: 18px 0 8px; font-size: 16px; }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-      margin-top: 12px;
-    }
-    .muted { color: var(--muted); }
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    @media (min-width: 860px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
-    .pill {
-      display: inline-block;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 12px;
-      margin: 4px 6px 0 0;
-    }
-    .iframe-wrap {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%;
-      border-radius: 14px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: #000;
-      margin-top: 10px;
-    }
-    .iframe-wrap iframe {
-      position: absolute; inset: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-    ul { margin: 8px 0 0 18px; }
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 22px 0;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .small { font-size: 13px; }
-    .btnrow { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
-    .btn {
-      display: inline-block;
-      padding: 9px 12px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: rgba(17,24,39,0.7);
-      font-size: 14px;
-    }
-    .note {
-      border-left: 4px solid var(--accent);
-      padding: 10px 12px;
-      background: rgba(96,165,250,0.08);
-      border-radius: 10px;
-      margin-top: 10px;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{border-bottom:1px solid var(--border);background:rgba(17,24,39,.6);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10}
+    .container{max-width:980px;margin:0 auto;padding:18px 16px}
+    .brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+    .brand h1{font-size:20px;margin:0}
+    .brand .tag{color:var(--muted);font-size:14px}
+    nav{margin-top:10px;display:flex;flex-wrap:wrap;gap:10px}
+    nav a{padding:8px 10px;border:1px solid var(--border);border-radius:10px;background:rgba(17,24,39,.7);font-size:14px}
+    main{padding:26px 0 50px}
+    section{margin:18px 0 28px}
+    h2{margin:0 0 10px;font-size:20px}
+    h3{margin:18px 0 8px;font-size:16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-top:12px}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media (min-width:860px){.grid{grid-template-columns:1fr 1fr}}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid var(--border);color:var(--muted);font-size:12px;margin:4px 6px 0 0}
+    .btnrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .btn{display:inline-block;padding:9px 12px;border-radius:10px;border:1px solid var(--border);background:rgba(17,24,39,.7);font-size:14px}
+    .iframe-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:14px;overflow:hidden;border:1px solid var(--border);background:#000;margin-top:10px}
+    .iframe-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    ul{margin:8px 0 0 18px}
+    footer{border-top:1px solid var(--border);padding:22px 0;color:var(--muted);font-size:13px}
   </style>
 </head>
 
@@ -124,76 +44,79 @@
     <div class="container">
       <div class="brand">
         <h1>Michael Geske</h1>
-        <div class="tag">CS-499 Computer Science Capstone ePortfolio</div>
+        <div class="tag">CS-499 Capstone ePortfolio (Software • Algorithms • Databases • Security)</div>
       </div>
       <nav aria-label="Primary">
         <a href="#self-assessment">Self-Assessment</a>
         <a href="#code-review">Code Review</a>
-        <a href="#artifacts">Artifacts</a>
+        <a href="#artifacts">Artifacts & Narratives</a>
         <a href="#outcomes">Course Outcomes</a>
-        <a href="#downloads">Downloads</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- ✅ REQUIRED: Self-Assessment must be first on the ePortfolio -->
+
+    <!-- REQUIRED: Self-Assessment should be first -->
     <section id="self-assessment">
       <h2>Professional Self-Assessment</h2>
       <div class="card">
-        <p class="muted small">
-          This self-assessment serves as the introduction to my ePortfolio and summarizes how my coursework and capstone
-          enhancements demonstrate growth across software engineering, algorithms and data structures, databases, and security.
-        </p>
+        <p class="muted small">Formal introduction and program reflection.</p>
 
-        <!-- Replace the text below with your final self-assessment (you can paste it in directly) -->
-        <h3>Overview & Professional Goals</h3>
         <p>
-          <!-- TODO: Paste your final self-assessment content here -->
-          I am completing the Bachelor of Science in Computer Science program and built this ePortfolio to present
-          evidence of my skills in software design, algorithms, databases, and secure development. Throughout the program,
-          I strengthened my ability to analyze requirements, design solutions, implement and test code, and communicate
-          technical work to different audiences. This portfolio highlights the work I am most proud of and the areas
-          where I added measurable improvements through iterative enhancement.
+          Getting a Bachelor’s degree is something that I have tried to achieve for many years, many majors, and many different
+          schools; all of which I have eventually stopped trying. I was unsure of what exactly I wanted to do and what I wanted
+          to spend my time learning. After years of failing that goal, I decided to join the military and only a couple years ago
+          did I feel comfortable enough to give college another try. Southern New Hampshire University offered me a flexible
+          option to succeed in the path that I wanted: Computer Science. Each class in the program gave me such an opportunity
+          to learn different methods, standards, languages, and even more. Not only do I have an understanding of a lot of
+          different fields within the computer science realm, but I also feel as if employers will be very attracted to what I have
+          to offer. This capstone class has enabled me to integrate everything I have learned from those classes into large
+          projects in which I can showcase to future employers. I have been able to refine my skills in software engineering,
+          algorithms and data structures, and databases while including the other skills like security implementation within
+          those topics.
         </p>
 
-        <h3>Collaboration & Communication</h3>
         <p>
-          <!-- TODO: Add your real examples -->
-          Across multiple courses, I practiced communicating technical decisions to instructors and peers through written
-          narratives, structured documentation, and walkthrough videos. In the capstone, I used the code review to
-          communicate existing functionality, identify improvement areas, and justify enhancement decisions in a way that
-          would be useful to teammates or stakeholders.
+          In the software design realm, I emphasized modularity, readability, and maintainability. In software design, it is
+          extremely important to be able to balance the give and takes when it comes to performance, memory, and security.
+          CS-250, CS-330, and CS-340 all reinforced the importance of the trade-off analysis and structure design. These
+          classes taught me approaches in developing a standardized method to create what I wanted the program to look like.
+          For data structures and algorithms, I learned how evaluating lists, hash tables, and algorithmic strategies are used to
+          create efficient and scalable solutions rather than simply functional ones. These experiences strengthened my ability
+          to break complex problems into manageable components, reason through multiple solution paths, and justify design
+          decisions in a professional setting. Lastly, my proficiency in database applications went from minimal to experienced.
+          Using SQL and MongoDB, I was able to design schemas and implement CRUD functionalities. This allowed me to
+          integrate databases into actual useful programs. This also gave me the opportunity to learn more about the Python
+          language, which intrigues me with its flexibility.
         </p>
 
-        <h3>Algorithms & Data Structures</h3>
         <p>
-          <!-- TODO: Add your real examples -->
-          I learned to evaluate tradeoffs in performance and correctness by selecting appropriate data structures and
-          algorithms for the problem. I applied this mindset in my algorithms artifact by improving the clarity of the
-          approach, tuning logic, and demonstrating how the algorithm improves the outcome.
+          My work in the military taught me to have a security first mindset, and the computer science coursework has reiterated
+          how important security is when developing code. CS-405 and CS-410 allowed me to identify vulnerabilities and
+          understand the cause and effect of not implementing security early on in the development process. I believe I became
+          proficient in identifying some security flaws like input validation or unsafe memory handling. These courses completely
+          changed how I approach a new project by ensuring security is included within every step of the way.
         </p>
 
-        <h3>Software Engineering & Databases</h3>
         <p>
-          <!-- TODO: Add your real examples -->
-          I strengthened software engineering practices such as modular design, readability, and testing. For databases,
-          I applied CRUD operations, data modeling, and validation to improve reliability and usability.
+          Collaboration and communication were probably the most difficult aspects for me to learn. It is easy to get into the zone
+          and develop code that I understand, but to receive peer feedback and code reviews it is necessary to be communicative
+          early on. Eventually, I learned how to explain the technical concepts and design decisions that I was aiming for. The
+          code review really showcased how much my abilities have grown to effectively collaborate and communicate with
+          everyone involved in the development process. Through documentation, code reviews, and design justification, I learned
+          how to present technical decisions in a way that supports stakeholder understanding and informed decision making.
+          My ePortfolio combines the artifacts that I spent a lot of time refining, as well as, demonstrates my capabilities across
+          those three large topics. It shows how I analyze problems, creatively design code, and implement enhancements. It also
+          reflects on how my thought process leads to my decision making in this enhancements.
         </p>
 
-        <h3>Security Mindset</h3>
         <p>
-          <!-- TODO: Add your real examples -->
-          I approached enhancements with a security mindset by considering input validation, least privilege, protecting
-          sensitive data, and anticipating misuse. Where applicable, I improved documentation and code structure to make
-          security decisions visible and maintainable.
+          Overall, the computer science program and the capstone experience have not only prepared me for the future, but it has
+          given me a streamlined idea of what area I want to focus in as I start applying for jobs post military. I believe I have
+          developed a strong technical understanding with a security-first mindset that aligns with industry needs. My ePortfolio
+          will represent my readiness to solve, collaborate, and deliver high quality projects.
         </p>
-
-        <div class="note">
-          <strong>Tip for a perfect score:</strong> Replace the placeholder paragraphs above with your final
-          self-assessment and include 1–2 concrete examples from courses beyond the three artifacts (e.g., secure coding,
-          testing/QA, reverse engineering, full-stack work).
-        </div>
       </div>
     </section>
 
@@ -201,9 +124,10 @@
       <h2>Informal Code Review Video</h2>
       <div class="card">
         <p>
-          This video provides a walkthrough of my original artifact(s), a code analysis of improvement opportunities,
-          and my planned enhancements aligned to the CS-499 course outcomes.
+          This video provides a walkthrough of my original artifact(s), code analysis, and planned enhancements aligned
+          to CS 499 course outcomes.
         </p>
+
         <div class="iframe-wrap">
           <iframe
             src="https://www.youtube.com/embed/0j66R249b_w"
@@ -211,183 +135,199 @@
             allowfullscreen>
           </iframe>
         </div>
+
         <p class="muted small">
-          If the embedded player does not load, open the video on YouTube:
-          <a href="https://www.youtube.com/watch?v=0j66R249b_w" target="_blank" rel="noopener">View code review</a>
+          If the embedded player does not load:
+          <a href="https://www.youtube.com/watch?v=0j66R249b_w" target="_blank" rel="noopener">Open on YouTube</a>
         </p>
       </div>
     </section>
 
     <section id="artifacts">
-      <h2>Capstone Artifacts</h2>
+      <h2>Capstone Artifacts & Narratives</h2>
       <p class="muted">
-        The artifacts below represent my growth in the three required categories: Software Design & Engineering,
-        Algorithms & Data Structures, and Databases. Each artifact includes a narrative explaining what I enhanced,
-        what I learned, and which CS-499 course outcomes the work supports.
+        Each artifact below includes a narrative (readable on this page) and a link to the supporting project files.
       </p>
 
       <div class="grid">
+
         <!-- Artifact 1 -->
         <div class="card">
           <h3>Software Design & Engineering — OpenGL Project</h3>
           <div>
             <span class="pill">C++</span>
             <span class="pill">OpenGL</span>
-            <span class="pill">3D Transformations</span>
-            <span class="pill">Textures / Interaction</span>
+            <span class="pill">Shaders</span>
+            <span class="pill">Textures</span>
+            <span class="pill">Modular Design</span>
           </div>
 
           <div class="btnrow">
             <a class="btn" href="https://github.com/mtgeske5/Capstone-Artifacts/tree/main/opengl-Project" target="_blank" rel="noopener">
-              View Repository Folder
+              View Project Files (GitHub)
             </a>
           </div>
 
-          <!-- ✅ REQUIRED: Narrative on the SITE (not just a link) -->
           <h3>Narrative</h3>
-          <p class="small">
-            <strong>What it is / when created:</strong>
-            <!-- TODO -->
-            This artifact is a 3D OpenGL scene created during CS-330 and enhanced during CS-499 to improve structure,
-            usability, and presentation quality.
+          <p>
+            The artifact I selected comes from my previous CS-330 course. The program I created includes basic rendering of
+            objects and camera movement using OpenGL. I created a scene from my kitchen that has a coffee pot, mug, and spoon.
+            It involved a lot of different shapes and shading, but the more intricate part was to include zooming in/out and
+            letting the operator choose their view. To enhance the project, I restructured the project into module components by
+            integrating external libraries, implementing shader based rendering, and then adding texture loading functionalities.
           </p>
-          <p class="small">
-            <strong>Why included / what skills it shows:</strong>
-            <!-- TODO -->
-            I selected this artifact because it demonstrates software design practices, iterative development, and
-            technical problem solving. The enhancements improved maintainability and user interaction while showcasing
-            core graphics concepts such as transformations, textures, and rendering.
+          <p>
+            I thought this project would be a great addition to my ePortfolio because it shows clear growth in my software design
+            and engineering. The original version was very basic level knowledge, but the enhancements showcase my ability to
+            involve multiple dependencies and use external libraries. Using dedicated managers for shaders, scenes, views and
+            shapes is a more standard method for developers to keep a maintainable design. I also had to manage tradeoffs with
+            performance and complexity which is a common problem in the computer graphic industry.
           </p>
-          <p class="small">
-            <strong>Reflection (learning, challenges, feedback):</strong>
-            <!-- TODO -->
-            During enhancement, I learned to better organize rendering code and debug issues related to transformations
-            and object alignment. I incorporated feedback by refining usability and improving clarity through commenting
-            and structure.
+          <p>
+            The programs I created in my earlier classes were simple designs to meet the criteria, however, these enhancements
+            give me the ability to be creative while understanding the wanted outcome. I wanted to make this program be industry
+            standard while balancing performance tradeoffs to demonstrate my ability to apply structured programming techniques
+            and integrating third party technologies. The original outcome still covers the overall goal of the software
+            development, but my enhancements support my engineering competency.
           </p>
-          <p class="small">
-            <strong>Course outcomes addressed:</strong>
-            <!-- TODO: list which of the 5 you hit most here -->
-            Communication, computing solutions/design tradeoffs, innovative tools/techniques, and security mindset (where applicable).
+          <p>
+            Enhancing this artifact led to plenty of challenges. For one, working with the graphic API’s was an issue because when
+            I first created the program I used the provided virtual desktop. Resource management and defensive programming are
+            two strategies that I really wanted to focus on when integrating the external libraries. This took a lot of patience to
+            make sure when loading that it compiled correctly. Debugging runtime errors related to OpenGL state and driver behavior
+            reinforced the difference between compile time success and runtime correctness. I think I actually learned a lot more
+            about the process because of the failures I dealt with. I used different problem solving techniques used in the industry
+            to de-bug and create a program that worked the way I wanted it to. Overall, these enhancements tested my abilities,
+            but I was able to use real-world debugging practices to fully enhance the original artifact.
           </p>
         </div>
 
         <!-- Artifact 2 -->
         <div class="card">
-          <h3>Algorithms & Data Structures — Reinforcement Learning Project</h3>
+          <h3>Algorithms & Data Structures — Reinforcement Learning (DQN)</h3>
           <div>
             <span class="pill">Python</span>
-            <span class="pill">Reinforcement Learning</span>
-            <span class="pill">Algorithmic Tradeoffs</span>
+            <span class="pill">Deep Q-Learning</span>
+            <span class="pill">Prioritized Experience Replay</span>
+            <span class="pill">Tradeoffs</span>
           </div>
 
           <div class="btnrow">
             <a class="btn" href="https://github.com/mtgeske5/Capstone-Artifacts/tree/main/Algorithms" target="_blank" rel="noopener">
-              View Repository Folder
+              View Project Files (GitHub)
             </a>
           </div>
 
           <h3>Narrative</h3>
-          <p class="small">
-            <strong>What it is / when created:</strong>
-            <!-- TODO -->
-            This artifact demonstrates an algorithms-focused project originally created in CS-370 and enhanced in CS-499
-            to strengthen how the approach is documented, evaluated, and communicated.
+          <p>
+            I decided to choose an artifact that I originally spent a lot of time working on because of the complexity involved.
+            I chose the learning based Treasure Hunt game that I created in the previous fall in CS-370. This program involved an
+            understanding of a Deep Q learning network, and how the agent is able to learn over time based on the strategies
+            provided. The implementation of a DQN allowed for an AI agent to progress through a maze and eventually learn all the
+            ins and outs in order to complete the maze with 100% accuracy no matter where the agent started the maze. The original
+            version relied on standard experience using uniform random sampling as the method to train the AI agent’s neural network.
           </p>
-          <p class="small">
-            <strong>Why included / what skills it shows:</strong>
-            <!-- TODO -->
-            I included this artifact because it demonstrates algorithmic thinking, evaluation of results, and decision
-            making around tradeoffs such as exploration vs. exploitation and performance vs. accuracy.
+          <p>
+            This artifact demonstrates my ability to design and evaluate the computing solutions using algorithmic principles and
+            data structures. The project involves a lot of strategy as to discovering which is the most efficient method of neural
+            understanding between uncertainties, reward based, and iterative optimization.
           </p>
-          <p class="small">
-            <strong>Reflection (learning, challenges, feedback):</strong>
-            <!-- TODO -->
-            Enhancing this work helped me better explain the algorithm, interpret performance, and refine the solution
-            based on outcomes. I learned to communicate technical reasoning more clearly for different audiences.
+          <p>
+            To enhance this project, I replaced the uniform experience replay with prioritized experience replay (PER). Originally,
+            the training samples were drawn from memory and each past experience was treated equally. The PER method assigns higher
+            sampling probability to experiences with a larger error. This completely changes the way the agent thinks and understands
+            previous decisions made. It requires a new data structure to track the agent’s previous decisions and prioritize them
+            with a weighted sample.
           </p>
-          <p class="small">
-            <strong>Course outcomes addressed:</strong>
-            Computing solutions using algorithmic principles, professional communication, and tools/techniques that deliver value.
+          <p>
+            Both methods of learning may lead to the same result in the end, but algorithmically this enhancement improves the
+            learning efficiency because the agent is able to replay more informative experiences even more frequently. The downside
+            may be the agent’s ability to maintain diversity in it’s samples, but it introduces dynamic priority updates based on
+            prediction error. The program originally allows me to change the parameters to adjust the agent’s neural network, but by
+            changing the sampling strategy I am able to demonstrate how data structures and algorithmic trade offs can more
+            efficiently and accurately complete the task.
+          </p>
+          <p>
+            The overall goal of this enhancement was to showcase my progress in designing and evaluating computing solutions with
+            the use of algorithmic principles and appropriate data structures. The prioritized replay buffer addition required
+            integrating a different strategy of sampling that balances complexity and performance.
+          </p>
+          <p>
+            The enhancement required me to look at the program from a different perspective by changing the data structure instead
+            of the parameters. By implementing this method, I was able to further my understanding of how to directly influence the
+            behavior and system performance. One of the main challenges was understanding the program as a whole because originally,
+            I was only able to edit a specific part of the program that did not involve adjusting the data structure. I didn’t want
+            to rewrite the program that adjusted the goal, but integrating the prioritize replay was an option to keep the program’s
+            intentions while upgrading it’s efficiency. This process increased my knowledge in algorithmic improvements and it
+            increased my understanding of technological trade-offs. Balancing these factors are real-life challenges that I will face
+            and this enhancement highlights my ability to logically understand the importance of algorithmic performance and system
+            behavior making this a strong addition to my ePortfolio.
           </p>
         </div>
 
         <!-- Artifact 3 -->
         <div class="card">
-          <h3>Databases — CRUD Enhancement Project</h3>
+          <h3>Databases — CRUD Enhancement with REST API (Flask)</h3>
           <div>
             <span class="pill">Python</span>
             <span class="pill">MongoDB</span>
             <span class="pill">CRUD</span>
+            <span class="pill">Flask REST API</span>
             <span class="pill">Validation</span>
           </div>
 
           <div class="btnrow">
             <a class="btn" href="https://github.com/mtgeske5/Capstone-Artifacts/tree/main/CRUD" target="_blank" rel="noopener">
-              View Repository Folder
+              View Project Files (GitHub)
             </a>
           </div>
 
           <h3>Narrative</h3>
-          <p class="small">
-            <strong>What it is / when created:</strong>
-            <!-- TODO -->
-            This artifact is a database-focused project originally created in CS-340 and enhanced in CS-499 to strengthen
-            data handling, reliability, and security considerations.
+          <p>
+            The artifact I chose was from the CS-340 class where I worked on creating a database with the CRUD strategy. The original
+            artifact includes an AnimalShelter class that used the basic create, read, update, and delete operations. I used basic
+            Python and MongoDB skills to complete the required database actions. To enhance this database, I expanded it to include a
+            REST style API layer with Flask. It supports externally accessible database operations through HTTP endpoints.
           </p>
-          <p class="small">
-            <strong>Why included / what skills it shows:</strong>
-            <!-- TODO -->
-            I selected this artifact because it demonstrates practical database skills including CRUD operations, data
-            modeling, and building a solution that supports user needs with clear interfaces and error handling.
+          <p>
+            I thought this would be a great artifact to include in my ePortfolio because of the overall practicality of databases and
+            how I was able to increase its capabilities. Databases are used in just about every software system, so being able to design
+            and improve them is a practice that should be mastered for future employment opportunities. My enhancements for this specific
+            artifact include isolating the database access logic within the AnimalShelter class by introducing application layers and input
+            validation. Databases are more than likely not accessed through direct application code, so being able to access through APIs is
+            definitely more industry standard. I added the REST interface to show the CRUD operations, as well as, including input validation
+            and centralized error handling.
           </p>
-          <p class="small">
-            <strong>Reflection (learning, challenges, feedback):</strong>
-            <!-- TODO -->
-            The enhancement process strengthened my understanding of validation, consistent data access patterns, and
-            secure handling of database operations. I incorporated feedback by improving documentation and usability.
+          <p>
+            In module 1, I proposed to make these changes because I think a database should be more robust with more accesses and the ability
+            to be reused. I believe I improved the abilities and efficiencies from the original artifact. I was able to learn a lot on databases
+            as a whole by thinking backwards and trying to research how a database should look professionally and adding those properties to the
+            enhanced artifact.
           </p>
-          <p class="small">
-            <strong>Course outcomes addressed:</strong>
-            Innovative tools/techniques, computing solutions for value, professional communication, and security mindset.
+          <p>
+            From my understanding, separating database logic and application logic improves efficiency and usage. The REST API layer really clarified
+            how databases are commonly accessed in larger real-world environments. I think the biggest challenge was the error handling and figuring out
+            the best way for the database to handle invalid input or database connectivity issues. All of this can be squared away by designing with
+            security in mind because poor error handling could lead to vulnerabilities.
+          </p>
+          <p>
+            Addressing these challenges helped strengthen my understanding of defensive programming and the security implications of exposing database
+            operations through an application interface.
           </p>
         </div>
 
-        <!-- Optional: If you only have 2 artifacts, delete one card above -->
       </div>
     </section>
 
     <section id="outcomes">
-      <h2>CS-499 Course Outcomes Mapping</h2>
+      <h2>CS-499 Course Outcomes Evidence</h2>
       <div class="card">
-        <p class="muted small">
-          This section makes it easy to see where each outcome is demonstrated across the code review, self-assessment,
-          and artifact enhancements.
-        </p>
         <ul>
-          <li><strong>Collaborative environments:</strong> Code review video + narratives describe review mindset, feedback, and decision making.</li>
-          <li><strong>Professional communication:</strong> Self-assessment + artifact narratives + clear organization and links.</li>
-          <li><strong>Algorithmic solutions & tradeoffs:</strong> Reinforcement learning / algorithm artifact narrative and supporting code.</li>
-          <li><strong>Innovative tools & techniques:</strong> OpenGL graphics tooling + database tooling + iterative enhancement work.</li>
-          <li><strong>Security mindset:</strong> Self-assessment security section + validation, safe practices, and documentation in artifacts.</li>
-        </ul>
-        <p class="muted small">
-          (You can tighten these bullets once your narratives are final—this is here to ensure “evidence” is obvious to the grader.)
-        </p>
-      </div>
-    </section>
-
-    <section id="downloads">
-      <h2>Downloads & Supporting Files</h2>
-      <div class="card">
-        <p class="muted small">
-          These links provide access to the original and enhanced code files and any supporting documentation.
-          (Your instructor may still require Word documents uploaded in the course, but your site content is readable here.)
-        </p>
-        <ul>
-          <li><a href="https://github.com/mtgeske5/Capstone-Artifacts" target="_blank" rel="noopener">Capstone Artifacts Repository (root)</a></li>
-          <li><a href="#self-assessment">Professional Self-Assessment (on this page)</a></li>
-          <li><a href="#code-review">Code Review Video (embedded above)</a></li>
+          <li><strong>Collaborative environments:</strong> Code review video and narratives describe analysis, improvement decisions, and reflection.</li>
+          <li><strong>Professional communication:</strong> Self-assessment and narratives are presented clearly and professionally on this site.</li>
+          <li><strong>Algorithmic principles & tradeoffs:</strong> DQN enhancement using PER demonstrates algorithm/data structure tradeoffs.</li>
+          <li><strong>Tools & techniques delivering value:</strong> OpenGL modularization, shader rendering, and database API layering show practical implementation skills.</li>
+          <li><strong>Security mindset:</strong> Defensive programming, input validation, and error handling are emphasized across enhancements.</li>
         </ul>
       </div>
     </section>
